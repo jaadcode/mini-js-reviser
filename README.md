@@ -80,7 +80,7 @@ Pick one or more ideas to practice and combine the concepts:
 💻 How to Run
 	1.	Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/js-es6-practice.git
+git clone git@github.com:jaadcode/mini-js-reviser.git
 
 	2.	Open index.html in your browser.
 	3.	Start coding in script.js and see the changes live.
