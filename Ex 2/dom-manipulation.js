@@ -20,6 +20,10 @@ export const addToList = () => {
   }
 }
 
+const changeStyle = () => {
+  
+}
+
 document.addEventListener('DOMContentLoaded', () =>{
   const magicButton = document.querySelector("#magic-button");
   magicButton.addEventListener('click', changeParagraph);
@@ -33,4 +37,7 @@ document.addEventListener('DOMContentLoaded', () =>{
       addToList();
     }
   })
+
+  const styleButton = document.querySelector("#style-button");
+  styleButton.addEventListener('click',)
 })
