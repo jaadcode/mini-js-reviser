@@ -21,7 +21,8 @@ export const addToList = () => {
 }
 
 const changeStyle = () => {
-  
+  const magicButton = document.querySelector("#magic-button");
+  magicButton.classList.toggle("button-85");
 }
 
 document.addEventListener('DOMContentLoaded', () =>{
@@ -39,5 +40,5 @@ document.addEventListener('DOMContentLoaded', () =>{
   })
 
   const styleButton = document.querySelector("#style-button");
-  styleButton.addEventListener('click',)
+  styleButton.addEventListener('click', changeStyle);
 })
