@@ -43,3 +43,19 @@ async function fetchRandomDataAsync() {
 
 fetchRandomDataAsync();
 
+
+function fakeApiCall() {
+  // instantly resolved Promise
+  return Promise.resolve({ id: 1, name: "Jaad", role: "developer" });
+}
+
+// Consume with .then()
+fakeApiCall().then((data) => console.log("Then:", data));
+
+// Or consume with async/await
+async function run() {
+  const data = await fakeApiCall();
+  console.log("Async/Await:", data);
+}
+
+run(); 
