@@ -3,15 +3,15 @@
   console.log('That function took approximately 3 sec to execute')
 }, 3000); */
 
-let i = 10;
 
-const myCounter = setInterval(() =>{
-  if(i === 0){
-    clearInterval(myCounter);
+const startCountDown = (i) => {
+  if(i < 0){
+    console.log('Count Down FINISHED');
+    return;
   }
   console.log(i);
-  i--;
-}, 1000);
+  setTimeout((() => startCountDown(i - 1)), 500);
+}
 
-console.log('I executed first');
+startCountDown(10);
 
