@@ -34,9 +34,9 @@ function fetchRandomData() {
 async function fetchRandomDataAsync() {
   try{
     const data = await fetchRandomData();
-    console.log('OMG IT WORKED');
-  } catch {
-    console.log('That DATA will never see the light of the day');
+    console.log(data);
+  } catch(error) {
+    console.log(error);
   }
   
 }
